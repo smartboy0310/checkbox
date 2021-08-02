@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.check {
+   text-align: center;
+	margin: 0 auto;
+}
+.heading {
+   margin: 0;
+   padding: 50px 0;
+}
+.form {
+   width: 320px;
+   margin: 0 auto;
+   padding: 50px;
+   border: 2px solid slategrey;
+   border-radius: 10px;
+}
+.form__label {
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+   margin-bottom: 25px;
+   font-size: 32px;
+   cursor: pointer;
+}
+.form__controller {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+   margin-right: 20px;
+	border: 1px solid dimgray;
+   border-radius: 5px;
+	cursor: pointer;
+   order: -1;
+}
+.form__input:checked + .tennis--controller{
+   background-image: url('../images/table-tennis.png');
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.form__input:checked + .basketbol--controller{
+   background-image: url('../images/basketball-ball.png');
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.form__input:checked + .volebol--controller{
+   background-image: url('../images/volleyball-ball.png');
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.form__input:checked + .hokkey--controller{
+   background-image: url('../images/hockey-puck.png');
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.form__input:disabled + .form__controller{
+	background-color:#ccc;
+	opacity: 0.5;
+}
+.form__input:disabled ~ .sports {
+	color:#ccc;
+	opacity: 0.5;
+}
+.form__input:focus + .form__controller {
+	box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.5);
+}
+
+.form__submit-btn {
+	display: block;
+   margin: 0 auto;
+	padding: 10px;
+	cursor: pointer;
+   border-radius: 5px;
+}
+

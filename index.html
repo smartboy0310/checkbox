@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="./css/main.css" />
+   <title>check</title>
+</head>
+<body>
+   <div class="check">
+      <h1 class="heading">
+         Qaysi sport turiga qiziqasiz
+      </h1>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
+         <label class="form__label">
+            <input class="form__input input--tennis visually-hidden" 
+            type="checkbox" 
+            name="sport types" 
+            value="stol tennis">
+            <span class="form__controller tennis--controller"></span>
+            <span class="sports">Stol tinnes</span>
+         </label>
+         <label class="form__label">
+            <input class="form__input visually-hidden" 
+            type="checkbox"
+            name="sport types"
+            value="basketbol"
+            disabled>
+            <span class="form__controller basketbol--controller"></span>
+            <span class="sports">Basketbol</span>
+         </label>
+         <label class="form__label">
+            <input class="form__input visually-hidden" 
+            type="checkbox" 
+            name="sport types" 
+            value="volebol">
+            <span class="form__controller volebol--controller"></span>
+            <span class="sports">Volebol</span>
+         </label>
+         <label class="form__label">
+            <input class="form__input visually-hidden" 
+            type="checkbox" 
+            name="sport types" 
+            value="hokkey"
+            checked
+            disabled>
+            <span class="form__controller hokkey--controller"></span>
+            <span class="sports">Hokkey</span>
+         </label>
+         
+         <button class="form__submit-btn" type="submit">Jo'natish</button>
+      </form>
+   </div>
+   
+</body>
+</html>
